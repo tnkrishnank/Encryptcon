@@ -7,8 +7,7 @@ Scripts\activate
 pip install -U Flask Authlib requests
 python -m pip install "pymongo[srv]"
 
-
-For MacOS 
+For Linux and MacOS
 
 python3 -m venv venv
 source venv\bin\activate

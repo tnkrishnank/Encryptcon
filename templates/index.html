@@ -13,13 +13,35 @@
 	<div class="limiter">
 		<div class="container-login0">
 			<div class="wrap-login0" style="width: 480px;">
-				<form class="login0-form validate-form" method="get">
+				<form class="login0-form validate-form" method="post">
 					<span class="login0-form-title">
 						LOGIN
 					</span>
+					<div class="wrap-input0">
+						<input class="input0" type="text" name="username" placeholder="Username or Email" required>
+						<span class="focus-input0"></span>
+						<span class="symbol-input0">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="wrap-input0">
+						<input class="input0" type="password" name="password" id="pass" placeholder="Password" required>
+						<span class="focus-input0"></span>
+						<span class="symbol-input0">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					<span class="text-warning d-flex justify-content-center">
+						<label>{{invalidMsg}}</label>
+					</span>
+					<div class="container-login0-form-btn pt-0">
+						<button class="login0-form-btn" style="background-color: #000; color: #fff" id="sPass" onclick="showPass()" type="button">
+							SHOW PASSWORD
+						</button>
+					</div>
 					<div class="container-login0-form-btn">
-						<button class="login0-form-btn" onclick="location.href='googleOAuth'" type="button">
-							<i class="fa fa-google"></i> &nbsp; CONTINUE WITH GOOGLE
+						<button class="login0-form-btn" type="submit">
+							LOGIN
 						</button>
 					</div>
 					<div class="text-center p-t-80">
@@ -58,5 +80,19 @@
 			</nav>
 		</div>
 	</div>
+	<script>
+		function showPass() {
+		  var x = document.getElementById("pass");
+		  if (x.type === "password") {
+			x.type = "text";
+			document.getElementById("sPass").style.cssText = 'background-color: #fff; color: #000;';
+			document.getElementById('sPass').textContent = 'HIDE PASSWORD';
+		  } else {
+			x.type = "password";
+			document.getElementById("sPass").style.cssText = 'background-color: #000; color: #fff;';
+			document.getElementById('sPass').textContent = 'SHOW PASSWORD';
+		  }
+		}
+	</script>
 </body>
 </html>
