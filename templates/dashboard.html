@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DASHBOARD</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login0">
+			<div class="wrap-login0 d-flex justify-content-center">
+				<form class="login0-form validate-form w-100" method="post">
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="login0-form-title pl-3 pb-0" style="text-align: left !important;">
+							{{welcome}}
+						</div>
+
+						<div class="pr-0 pl-0">
+							<button class="login1-form-btn" name="logout" value="signout" type="submit">
+								LOGOUT
+							</button>
+						</div>
+					</div>
+
+					<div class="pr-2 pl-2">
+						<hr class="mb-0" color="white">
+					</div>
+
+					<div class="container-login0-form-btn">
+						<button class="login0-form-btn" onclick="location.href='send'" id="send" type="button">
+							SEND MONEY
+						</button>
+					</div>
+
+					<div class="container-login0-form-btn">
+						<button class="login0-form-btn" onclick="location.href='balance'" id="balance" type="button">
+							CHECK BALANCE
+						</button>
+					</div>
+
+					<div class="container-login0-form-btn">
+						<button class="login0-form-btn" onclick="location.href='settings'" id="settings" type="button">
+							SETTINGS
+						</button>
+					</div>
+
+                    <div class="text-center p-t-50">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
